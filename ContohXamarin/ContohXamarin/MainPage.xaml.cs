@@ -12,6 +12,14 @@ namespace ContohXamarin
         public MainPage()
         {
             InitializeComponent();
+
+            btnSubmit.Clicked += BtnSubmit_Clicked;
+        }
+
+        private void BtnSubmit_Clicked(object sender, EventArgs e)
+        {
+            DisplayAlert("Keterangan", "Jadi nama anda "+txtFirstname.Text+" "+
+                txtLastname.Text, "OK");
         }
     }
 }

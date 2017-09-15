@@ -13,7 +13,7 @@ namespace ContohXamarin
         {
             InitializeComponent();
 
-            MainPage = new ContohXamarin.MainPage();
+            MainPage = new SampleGridLayout();
         }
 
         protected override void OnStart()
