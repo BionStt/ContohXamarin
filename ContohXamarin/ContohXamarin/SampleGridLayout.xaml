@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ContohXamarin.SampleGridLayout" Title="Sample Grid">
+             x:Class="ContohXamarin.SampleGridLayout" Title="Calculator">
     <StackLayout>
         <Label Text="Simple Calculator" FontSize="Large" FontAttributes="Bold" 
                HorizontalTextAlignment="Center" />
@@ -38,6 +38,7 @@
             <StackLayout  Grid.Row="4" Grid.Column="1" Orientation="Horizontal">
                 <Button x:Name="btnKali" Text="Kali" />
                 <Button x:Name="btnBagi" Text="Bagi" />
+                <Button x:Name="btnCek" Text="Cek App" Clicked="btnCek_Clicked" />
             </StackLayout>
         </Grid>
     </StackLayout>

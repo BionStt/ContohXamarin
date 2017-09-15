@@ -47,5 +47,11 @@ namespace ContohXamarin
             }
             txtHasil.Text = hasil.ToString();
         }
+
+        private async void btnCek_Clicked(object sender, EventArgs e)
+        {
+            await DisplayAlert("Keterangan", "Data : " + Application.Current.Properties["username"].ToString(),
+                "OK");
+        }
     }
 }

@@ -12,7 +12,7 @@ namespace ContohXamarin
         public App()
         {
             InitializeComponent();
-
+            Application.Current.Properties["username"] = "";
             MainPage = new NavigationPage(new MainPage());
         }
 
