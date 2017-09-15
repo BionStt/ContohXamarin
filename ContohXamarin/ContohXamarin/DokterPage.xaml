@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ContohXamarin.DokterPage">
+    <ContentPage.Content>
+        
+        <StackLayout>
+            <ListView ItemsSource="{Binding ListDokter}" HasUnevenRows="True" ItemTapped="ListView_ItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="{Binding Gambar}" WidthRequest="100" HeightRequest="100" />
+                                <StackLayout Orientation="Vertical">
+                                    <Label Text="{Binding NIA}" FontAttributes="Bold" TextColor="Magenta" />
+                                    <Label Text="{Binding Nama}" TextColor="Red" />
+                                    <Label Text="{Binding Spesialisasi}" TextColor="Blue" />
+                                    <Label Text="{Binding Alamat}" TextColor="Orange" />
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -12,9 +12,9 @@ using ContohXamarin.Models;
 namespace ContohXamarin
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class DaftarDokterPage : ContentPage
+    public partial class DokterPage : ContentPage
     {
-        public DaftarDokterPage()
+        public DokterPage()
         {
             InitializeComponent();
             BindingContext = new DaftarDokterViewModel();

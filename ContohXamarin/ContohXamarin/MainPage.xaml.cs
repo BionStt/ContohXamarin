@@ -21,5 +21,15 @@ namespace ContohXamarin
             DisplayAlert("Keterangan", "Jadi nama anda "+txtFirstname.Text+" "+
                 txtLastname.Text, "OK");
         }
+
+        private void DaftarDokterItem_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CalculatorItem_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

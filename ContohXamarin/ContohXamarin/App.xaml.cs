@@ -13,7 +13,7 @@ namespace ContohXamarin
         {
             InitializeComponent();
 
-            MainPage = new DaftarDokterPage();
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()

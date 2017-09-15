@@ -44,6 +44,9 @@
     <Compile Include="DaftarDokterPage.xaml.cs">
       <DependentUpon>DaftarDokterPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DokterPage.xaml.cs">
+      <DependentUpon>DokterPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -92,6 +95,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="DaftarDokterPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DokterPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

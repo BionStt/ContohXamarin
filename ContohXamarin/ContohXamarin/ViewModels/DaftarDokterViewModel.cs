@@ -22,9 +22,12 @@ namespace ContohXamarin.ViewModels
         {
             listDokter = new List<Dokter>
             {
-                new Dokter {NIA="12345",Nama="drg.Andi Setiawan",Spesialisasi="Prosto",Gambar="first.png"},
-                new Dokter {NIA="23456",Nama="drg.Bambang Wahyudi",Spesialisasi="Bedah Mulut",Gambar="second.png"},
-                new Dokter {NIA="34567",Nama="drg.Budi Halim",Spesialisasi="Orto",Gambar="third.png"}
+                new Dokter {NIA="12345",Nama="drg.Andi Setiawan",Spesialisasi="Prosto",
+                    Gambar ="first.png",Alamat="Jl Mangga 12"},
+                new Dokter {NIA="23456",Nama="drg.Bambang Wahyudi",Spesialisasi="Bedah Mulut",
+                    Gambar ="second.png",Alamat="Jl Rajawali 23"},
+                new Dokter {NIA="34567",Nama="drg.Budi Halim",Spesialisasi="Orto",
+                    Gambar ="third.png",Alamat="Jl Mawar 11"}
             };
         }
 

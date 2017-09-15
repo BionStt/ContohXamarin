@@ -3,14 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ContohXamarin"
              x:Class="ContohXamarin.MainPage">
-
-    <StackLayout Orientation="Vertical">
-        <Label Text="Firstname :" />
-        <Entry x:Name="txtFirstname" Placeholder="insert firstname" />
-        <Label Text="Lastname :"/>
-        <Entry x:Name="txtLastname" Placeholder="insert lastname"/>
-        <StackLayout Orientation="Horizontal">
-            <Button x:Name="btnSubmit" Text="Submit" />
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Daftar Dokter" Order="Secondary" Clicked="DaftarDokterItem_Clicked" />
+        <ToolbarItem Text="Calculator" Order="Secondary" Clicked="CalculatorItem_Clicked" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Label Text="Firstname :" />
+            <Entry x:Name="txtFirstname" Placeholder="insert firstname" />
+            <Label Text="Lastname :"/>
+            <Entry x:Name="txtLastname" Placeholder="insert lastname"/>
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="btnSubmit" Text="Submit" />
+            </StackLayout>
         </StackLayout>
-    </StackLayout>
+    </ContentPage.Content>
+   
 </ContentPage>
