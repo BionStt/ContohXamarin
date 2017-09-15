@@ -7,7 +7,7 @@
             <ListView ItemsSource="{Binding ListDokter}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextCell Text="{Binding Nama}" 
+                        <ImageCell ImageSource="{Binding Gambar}" Text="{Binding Nama}" 
                                   Detail="{Binding Spesialisasi}" DetailColor="Blue" />
                     </DataTemplate>
                 </ListView.ItemTemplate>

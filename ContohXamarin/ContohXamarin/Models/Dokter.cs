@@ -11,5 +11,6 @@ namespace ContohXamarin.Models
         public string NIA { get; set; }
         public string Nama { get; set; }
         public string Spesialisasi { get; set; }
+        public string Gambar { get; set; }
     }
 }
