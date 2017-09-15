@@ -38,13 +38,21 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BindingListString.xaml.cs">
+      <DependentUpon>BindingListString.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DaftarDokterPage.xaml.cs">
+      <DependentUpon>DaftarDokterPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\Dokter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SampleGridLayout.xaml.cs">
       <DependentUpon>SampleGridLayout.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\DaftarDokterViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MainPage.xaml">
@@ -72,6 +80,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="SampleGridLayout.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BindingListString.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DaftarDokterPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
