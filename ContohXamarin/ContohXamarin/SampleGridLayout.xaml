@@ -10,6 +10,8 @@
                 <RowDefinition Height="40" />
                 <RowDefinition Height="40" />
                 <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
@@ -24,10 +26,19 @@
             <Label Text="Bilangan 2 :" FontSize="Medium" VerticalTextAlignment="Center"
                    HorizontalTextAlignment="End" Grid.Row="1" Grid.Column="0" />
             <Entry x:Name="txtBil2" Placeholder="masukan bil 2" Grid.Row="1" Grid.Column="1" />
+
+            <Label Text="Hasil :" FontSize="Medium" VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="End" Grid.Row="2" Grid.Column="0" />
+            <Entry x:Name="txtHasil" IsEnabled="False" Grid.Row="2" Grid.Column="1" />
+
+            <StackLayout  Grid.Row="3" Grid.Column="1" Orientation="Horizontal">
+                <Button x:Name="btnTambah" Text="Tambah" />
+                <Button x:Name="btnKurang" Text="Kurang"/>
+            </StackLayout>
+            <StackLayout  Grid.Row="4" Grid.Column="1" Orientation="Horizontal">
+                <Button x:Name="btnKali" Text="Kali" />
+                <Button x:Name="btnBagi" Text="Bagi" />
+            </StackLayout>
         </Grid>
-        
-
-
-      
     </StackLayout>
 </ContentPage>
