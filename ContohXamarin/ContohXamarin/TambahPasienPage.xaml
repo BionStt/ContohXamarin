@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ContohXamarin.TambahPasienPage" Title="Tambah Pasien">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry FontSize="Medium" FontAttributes="Bold" Placeholder="masukan pasien id" />
+            <Entry FontSize="Medium" TextColor="Red" Placeholder="masukan nama" />
+            <Entry  TextColor="Blue" Placeholder="masukan alamat" />
+            <Entry  TextColor="Orange" FontAttributes="Bold" Keyboard="Numeric" Placeholder="masukan umur" />
+            <Entry  TextColor="Green" Placeholder="masukan telpon" />
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="btnTambah" Text="Edit" Clicked="btnTambah_Clicked" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

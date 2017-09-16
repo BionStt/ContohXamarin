@@ -65,6 +65,9 @@
     </Compile>
     <Compile Include="Services\PasienServices.cs" />
     <Compile Include="Services\PenggunaServices.cs" />
+    <Compile Include="TambahPasienPage.xaml.cs">
+      <DependentUpon>TambahPasienPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\DaftarDokterViewModel.cs" />
     <Compile Include="ViewModels\DaftarPasienViewModel.cs" />
   </ItemGroup>
@@ -142,6 +145,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="DetailPasienPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TambahPasienPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

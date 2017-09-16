@@ -37,5 +37,10 @@ namespace ContohXamarin
             detailPasienPage.BindingContext = currPasien;
             await Navigation.PushAsync(detailPasienPage);
         }
+
+        private async void ToolbarTambahPasien_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new TambahPasienPage());
+        }
     }
 }

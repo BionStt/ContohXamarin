@@ -2,6 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ContohXamarin.DaftarPasienPage" Title="Daftar Pasien">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Tambah Pasien" Order="Secondary" Clicked="ToolbarTambahPasien_Clicked" />
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
             <ListView x:Name="lvPasien" ItemTapped="lvPasien_ItemTapped">
