@@ -4,7 +4,7 @@
              x:Class="ContohXamarin.DaftarPasienPage" Title="Daftar Pasien">
     <ContentPage.Content>
         <StackLayout>
-            <ListView x:Name="lvPasien">
+            <ListView x:Name="lvPasien" ItemTapped="lvPasien_ItemTapped">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <TextCell Text="{Binding Nama}" Detail="{Binding Alamat}" />

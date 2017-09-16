@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ContohXamarin.DetailPasienPage" Title="Detail Pasien">
+    <ContentPage.Content>
+        <StackLayout>
+            <Editor Text="{Binding PasienID}" FontSize="Medium" FontAttributes="Bold" />
+            <Editor Text="{Binding Nama}" FontSize="Medium" TextColor="Red" />
+            <Editor Text="{Binding Alamat}" TextColor="Blue" />
+            <Editor Text="{Binding Umur}" TextColor="Orange" FontAttributes="Bold" />
+            <Editor Text="{Binding Telpon}" TextColor="Green" />
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="btnEdit" Text="Edit" />
+                <Button x:Name="btnDelete" Text="Delete" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

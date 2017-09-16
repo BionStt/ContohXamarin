@@ -32,7 +32,7 @@ namespace ContohXamarin
             if (isValid)
             {
                 Application.Current.Properties["username"] = txtUsername.Text;
-                await DisplayAlert("Keterangan", "Login berhasil", "OK");
+                await Navigation.PushAsync(new DaftarPasienPage());
             }
             else
             {

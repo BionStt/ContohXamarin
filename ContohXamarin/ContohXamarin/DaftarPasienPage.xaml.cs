@@ -29,5 +29,10 @@ namespace ContohXamarin
             listPasien = new ObservableCollection<Pasien>(await pasienService.GetAllPasien());
             lvPasien.ItemsSource = listPasien;
         }
+
+        private void lvPasien_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+
+        }
     }
 }
