@@ -4,11 +4,10 @@
              x:Class="ContohXamarin.TambahPasienPage" Title="Tambah Pasien">
     <ContentPage.Content>
         <StackLayout>
-            <Entry FontSize="Medium" FontAttributes="Bold" Placeholder="masukan pasien id" />
-            <Entry FontSize="Medium" TextColor="Red" Placeholder="masukan nama" />
-            <Entry  TextColor="Blue" Placeholder="masukan alamat" />
-            <Entry  TextColor="Orange" FontAttributes="Bold" Keyboard="Numeric" Placeholder="masukan umur" />
-            <Entry  TextColor="Green" Placeholder="masukan telpon" />
+            <Entry FontSize="Medium" x:Name="txtNama" TextColor="Red" Placeholder="masukan nama" />
+            <Entry x:Name="txtAlamat" TextColor="Blue" Placeholder="masukan alamat" />
+            <Entry x:Name="txtUmur" TextColor="Orange" FontAttributes="Bold" Keyboard="Numeric" Placeholder="masukan umur" />
+            <Entry x:Name="txtTelpon" TextColor="Green" Placeholder="masukan telpon" />
             <StackLayout Orientation="Horizontal">
                 <Button x:Name="btnTambah" Text="Edit" Clicked="btnTambah_Clicked" />
             </StackLayout>
