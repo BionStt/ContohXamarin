@@ -5,6 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
+using ContohXamarin.Services;
+using ContohXamarin.Models;
+
 namespace ContohXamarin
 {
     public partial class MainPage : ContentPage
@@ -13,23 +16,28 @@ namespace ContohXamarin
         public MainPage()
         {
             InitializeComponent();
-
             btnSubmit.Clicked += BtnSubmit_Clicked;
         }
 
         private async void BtnSubmit_Clicked(object sender, EventArgs e)
         {
-            if(txtUsername.Text=="erick" && txtPassword.Text=="rahasia")
+            PenggunaServices penggunaServices = new PenggunaServices();
+            Pengguna pgn = new Pengguna
+            {
+                Username = txtUsername.Text,
+                Password = txtPassword.Text
+            };
+            var isValid = await penggunaServices.Login(pgn);
+
+            if (isValid)
             {
                 Application.Current.Properties["username"] = txtUsername.Text;
-                await DisplayAlert("Keterangan", "Login berhasil !","OK");
+                await DisplayAlert("Keterangan", "Login berhasil", "OK");
             }
             else
             {
-                await DisplayAlert("Keterangan", "Username / Password tidak tepat", "OK");
+                await DisplayAlert("Keterangan", "Username / Password tidak sesuai", "OK");
             }
-            
-            
         }
 
         private async void DaftarDokterItem_Clicked(object sender, EventArgs e)

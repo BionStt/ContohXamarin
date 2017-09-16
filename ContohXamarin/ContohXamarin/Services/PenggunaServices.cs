@@ -24,7 +24,7 @@ namespace ContohXamarin.Services
 
         public async Task<bool> Login(Pengguna pengguna)
         {
-            var strUri = new Uri(Path.Combine(backendUrl, "api/Pengguna/api/Pengguna/Login"));
+            var strUri = new Uri(Path.Combine(backendUrl, "api/Pengguna/Login"));
             var jsonPengguna = JsonConvert.SerializeObject(pengguna);
             var content = new StringContent(jsonPengguna, Encoding.UTF8, "application/json");
             HttpResponseMessage response = await _client.PostAsync(strUri, content);

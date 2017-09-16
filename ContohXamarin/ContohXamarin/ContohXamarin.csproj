@@ -57,6 +57,7 @@
     <Compile Include="SampleGridLayout.xaml.cs">
       <DependentUpon>SampleGridLayout.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Services\PasienServices.cs" />
     <Compile Include="Services\PenggunaServices.cs" />
     <Compile Include="ViewModels\DaftarDokterViewModel.cs" />
   </ItemGroup>
