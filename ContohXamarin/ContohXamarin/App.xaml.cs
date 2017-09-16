@@ -13,7 +13,7 @@ namespace ContohXamarin
         {
             InitializeComponent();
             Application.Current.Properties["username"] = "";
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new DaftarPasienPage());
         }
 
         protected override void OnStart()
