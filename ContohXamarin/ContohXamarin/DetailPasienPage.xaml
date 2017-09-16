@@ -4,11 +4,11 @@
              x:Class="ContohXamarin.DetailPasienPage" Title="Detail Pasien">
     <ContentPage.Content>
         <StackLayout>
-            <Editor Text="{Binding PasienID}" FontSize="Medium" FontAttributes="Bold" />
-            <Editor Text="{Binding Nama}" FontSize="Medium" TextColor="Red" />
-            <Editor Text="{Binding Alamat}" TextColor="Blue" />
-            <Editor Text="{Binding Umur}" TextColor="Orange" FontAttributes="Bold" />
-            <Editor Text="{Binding Telpon}" TextColor="Green" />
+            <Entry Text="{Binding PasienID}" FontSize="Medium" FontAttributes="Bold" Placeholder="masukan pasien id" />
+            <Entry Text="{Binding Nama}" FontSize="Medium" TextColor="Red" Placeholder="masukan nama" />
+            <Entry Text="{Binding Alamat}" TextColor="Blue" Placeholder="masukan alamat" />
+            <Entry Text="{Binding Umur}" TextColor="Orange" FontAttributes="Bold" Keyboard="Numeric" Placeholder="masukan umur" />
+            <Entry Text="{Binding Telpon}" TextColor="Green" Placeholder="masukan telpon" />
             <StackLayout Orientation="Horizontal">
                 <Button x:Name="btnEdit" Text="Edit" />
                 <Button x:Name="btnDelete" Text="Delete" />

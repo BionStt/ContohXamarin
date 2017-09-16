@@ -30,9 +30,12 @@ namespace ContohXamarin
             lvPasien.ItemsSource = listPasien;
         }
 
-        private void lvPasien_ItemTapped(object sender, ItemTappedEventArgs e)
+        private async void lvPasien_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-
+            var currPasien = (Pasien)e.Item;
+            DetailPasienPage detailPasienPage = new DetailPasienPage();
+            detailPasienPage.BindingContext = currPasien;
+            await Navigation.PushAsync(detailPasienPage);
         }
     }
 }
