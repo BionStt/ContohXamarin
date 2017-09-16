@@ -4,14 +4,14 @@
              x:Class="ContohXamarin.DetailPasienPage" Title="Detail Pasien">
     <ContentPage.Content>
         <StackLayout>
-            <Entry Text="{Binding PasienID}" FontSize="Medium" FontAttributes="Bold" Placeholder="masukan pasien id" />
-            <Entry Text="{Binding Nama}" FontSize="Medium" TextColor="Red" Placeholder="masukan nama" />
-            <Entry Text="{Binding Alamat}" TextColor="Blue" Placeholder="masukan alamat" />
-            <Entry Text="{Binding Umur}" TextColor="Orange" FontAttributes="Bold" Keyboard="Numeric" Placeholder="masukan umur" />
-            <Entry Text="{Binding Telpon}" TextColor="Green" Placeholder="masukan telpon" />
+            <Entry x:Name="txtPasienID" Text="{Binding PasienID}" FontSize="Medium" IsEnabled="False" FontAttributes="Bold" />
+            <Entry x:Name="txtNama" Text="{Binding Nama}" FontSize="Medium" TextColor="Red"  />
+            <Entry x:Name="txtAlamat" Text="{Binding Alamat}" TextColor="Blue"/>
+            <Entry x:Name="txtUmur" Text="{Binding Umur}" TextColor="Orange" Keyboard="Numeric"  />
+            <Entry x:Name="txtTelpon" Text="{Binding Telpon}" TextColor="Green" />
             <StackLayout Orientation="Horizontal">
-                <Button x:Name="btnEdit" Text="Edit" />
-                <Button x:Name="btnDelete" Text="Delete" />
+                <Button x:Name="btnEdit" Text="Edit" Clicked="btnEdit_Clicked" />
+                <Button x:Name="btnDelete" Text="Delete" Clicked="btnDelete_Clicked" />
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

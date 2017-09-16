@@ -9,7 +9,7 @@
             <Entry x:Name="txtUmur" TextColor="Orange" FontAttributes="Bold" Keyboard="Numeric" Placeholder="masukan umur" />
             <Entry x:Name="txtTelpon" TextColor="Green" Placeholder="masukan telpon" />
             <StackLayout Orientation="Horizontal">
-                <Button x:Name="btnTambah" Text="Edit" Clicked="btnTambah_Clicked" />
+                <Button x:Name="btnTambah" Text="Tambah" Clicked="btnTambah_Clicked" />
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
